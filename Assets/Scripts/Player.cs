@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 {
   NavMeshAgent agent;
 
+  string status; //tahanan / main / base
+
   private void Start() {
     agent = GetComponent<NavMeshAgent>();
   }

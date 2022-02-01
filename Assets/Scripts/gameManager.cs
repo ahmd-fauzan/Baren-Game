@@ -33,10 +33,4 @@ public class gameManager : MonoBehaviour
             }
         }
     }
-
-    private void OnCollisionEnter(Collision other) {
-      if(other.collider.tag("Enemy")){
-        
-      }
-    }
 }
