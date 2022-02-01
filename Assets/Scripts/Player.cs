@@ -7,15 +7,12 @@ public class Player : MonoBehaviour
 {
   NavMeshAgent agent;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        agent = GetComponent<NavMeshAgent>();
-    }
+  private void Start() {
+    agent = GetComponent<NavMeshAgent>();
+  }
 
-    // Update is called once per frame
-    void Update()
-    {
-        agent.SetDestination(new Vector3(0, 0, 0));
+    // Start is called before the first frame update
+    public void Move(Vector3 point){
+      agent.SetDestination(point);
     }
 }
